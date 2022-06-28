@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IICPESCE</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/avenir-lt-std');
+
+html{
+    font-family: 'Avenir LT Std', sans-serif;   
+    font-family: 'Avenir LT Std', sans-serif !important;   
+    letter-spacing: normal
+}
+body{
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color:#50d4a8f9;
+    height: 100%;
+}
+
+p{
+    margin: 0px !important;
+}
+.link{
+    transition: 0.1s;
+}
+.link i:hover{
+    transform: scale(1.2);
+    background: none;
+    z-index: 2;
+}
+.linkBtn{
+    padding: 20px; background-color: white; color: #3D3B3C;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    margin: 4px 0px;
+    max-width: 700px;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+.linkBtn:hover{
+    transform: scale(1.08);
+    background: none;
+    z-index: 2;
+    background-color: white;
+} 
+.links{
+    align-items: center;
+    letter-spacing: 10px;
+    font-size: 35px;
+    flex-direction: column;
+    text-align: center;justify-content: center;
+}
+h5{
+    margin-bottom: 0%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212b28;
+    transition: all 0.5s;
+  }
+  .loader .ring{
+    height: 45px;
+    width: 45px;
+    border: 5px solid rgba(221, 221, 221, 0);
+    border-radius: 50%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  .loader .ring:after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #00e379;
+    border-top-color: transparent;
+    animation: rotate 1.5s linear infinite;
+  }
+  @keyframes rotate {
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+@media only screen and (max-width:1024px){
+    .card{
+        width: 95%;
+    }
+}
+@media screen and (max-width:640px)
+{
+
+    .links{
+    width:100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="ring"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <h4>Please Wait....</h4>
+     </div>
+
+    <div class="card"
+        style="display: flex; justify-content: center; flex-direction: column; align-items: center; padding: 24px 12px;">
+        
+        
+            <!-- Profile Info -->
+            <div
+                style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin: 12px 0px 24px; width: 100%;">
+                <img src="logo.png" style="height: 120px; width: 120px; margin-bottom: 8px;" />
+                <p style="margin: 6px 0px !important;"><strong>@IICPESCE</strong></p>
+                <p>Autonomous Institution affiliated to VTU</p>
+            </div>
+            <!-- Links -->
+
+            <div
+                style="display: flex; flex-direction: column; width: 90%; justify-content: center; align-items: center; font-weight: 800; ">
+                <a class="linkBtn" href="https://forms.gle/HfpCvvd5hDkePs4u9" target="_blank">Recruitment For IIC</a>
+                <a class="linkBtn" href="https://www.sih.gov.in/" target="_blank">Smart India Hackathon Registration</a>
+                <a class="linkBtn" href="pages.html" target="_blank" >IIC Co-Ordintors</a>
+                <a class="linkBtn" href="pages.html" target="_blank" >YouTube Channel</a>
+                <a class="linkBtn" href="https://www.pescemandya.org/">College Website</a>
+                <a class="linkBtn" href="pages.html" target="_blank" >IIC Website</a>
+                <div class="links">
+                <ul>
+                    <a class="link" href="https://www.instagram.com/iicpesce/" target="_blank" style="color: black ;"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a class="link" href="https://www.instagram.com/iicpesce/" target="_blank" style="color: black ;"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="link" href="https://www.instagram.com/iicpesce/" target="_blank" style="color: black ;"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+          
+<h5>Made By <a href="https://www.instagram.com/_.manojgowda._/" target="_blank" ><i class="fa fa-instagram" aria-hidden="true">_ManojGowda</i></a>&nbsp;IIC-PESCE,Mandya</h5>
+<script>
+    const loader = document.querySelector(".loader");
+window.onload = function(){
+  setTimeout(function(){
+    loader.style.opacity = "0";
+    setTimeout(function(){
+      loader.style.display = "none";
+    }, 500);
+  },1500);
+}
+</script>
+</body>
+</html>
